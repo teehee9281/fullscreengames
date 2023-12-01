@@ -1,78 +1,89 @@
-
 <html>
 <head>
+  <link rel="icon" href="path/to/default-favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<button onclick="openFnaf1()">Open Five Nights At Freddies: 1</button>
-<button onclick="openFnaf2()">Open Five Nights At Freddies: 2</button>
-<button onclick="openFnaf3()">Open Five Nights At Freddies: 3</button>
-<button onclick="openFnaf4()">Open Five Nights At Freddies: 4</button>
-<button onclick="openMonkeyMart()">Open Monkey Mart</button>
-<script>
-function openFnaf1() {
-  var win = window.open();
-  var url = "https://imadejptr.github.io/strg/fnaf/index.html";
-  var iframe = win.document.createElement('iframe');
-  iframe.style.width = "100%";
-  iframe.style.height = "100%";
-  iframe.style.border = "none";
-  win.document.body.style.margin = '0';  
-  iframe.src = url;
-  win.document.body.appendChild(iframe);
-  win.document.title = 'Google Classroom';
-}
+  <button onclick="openFnaf1()">Open Five Nights At Freddy's 1</button>
+  <button onclick="openFnaf2()">Open Five Nights At Freddy's 2</button>
+  <button onclick="openFnaf3()">Open Five Nights At Freddy's 3</button>
+  <button onclick="openFnaf4()">Open Five Nights At Freddy's 4</button>
+  <button onclick="openMonkeyMart()">Open Monkey Mart</button>
+  <button onclick="openCookie()">Open Cookie Clicker</button>
+  <button onclick="openRetroBowl()">Open Retro Bowl</button>
+  <button onclick="openSuperHot()">Open Super Hot</button>
+  <button onclick="openSubwaySurfers()">Open Subway Surfers</button>
+  <button onclick="openSlope()">Open Slope</button>
+  <button onclick="openMarioVer()">Open Mario vs Luigi: Versus</button>
+  <button onclick="openBacon()">Open Bacon May Die</button>
+  <button onclick="openRoblox()">Open Roblox</button>
+  <script>
+    function openWindow(url, title, favicon) {
+      var win = window.open();
+      var iframe = win.document.createElement('iframe');
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.border = "none";
+      win.document.body.style.margin = '0';
+      iframe.src = url;
+      win.document.body.appendChild(iframe);
+      win.document.title = title;
 
-function openFnaf2() {
-  var win = window.open();
-  var url = "https://imadejptr.github.io/strg/fnaf2/index.html";
-  var iframe = win.document.createElement('iframe');
-  iframe.style.width = "100%";
-  iframe.style.height = "100%";
-  iframe.style.border = "none";
-  win.document.body.style.margin = '0';  
-  iframe.src = url;
-  win.document.body.appendChild(iframe);
-  win.document.title = 'Google Classroom';
-}
+      // Set favicon for the opened window
+      var link = win.document.createElement('link');
+      link.rel = 'icon';
+      link.href = favicon;
+      win.document.head.appendChild(link);
+    }
 
-function openFnaf3() {
-  var win = window.open();
-  var url = "https://imadejptr.github.io/strg/fnaf3/index.html";
-  var iframe = win.document.createElement('iframe');
-  iframe.style.width = "100%";
-  iframe.style.height = "100%";
-  iframe.style.border = "none";
-  win.document.body.style.margin = '0';  
-  iframe.src = url;
-  win.document.body.appendChild(iframe);
-  win.document.title = 'Google Classroom';
-}
+    function openFnaf1() {
+      openWindow("https://imadejptr.github.io/strg/fnaf/index.html", 'Google Docs', 'docs.ico');
+    }
 
-function openFnaf4() {
-  var win = window.open();
-  var url = "https://imadejptr.github.io/strg/fnaf4/index.html";
-  var iframe = win.document.createElement('iframe');
-  iframe.style.width = "100%";
-  iframe.style.height = "100%";
-  iframe.style.border = "none";
-  win.document.body.style.margin = '0';  
-  iframe.src = url;
-  win.document.body.appendChild(iframe);
-  win.document.title = 'Google Classroom';
-}
+    function openFnaf2() {
+      openWindow("https://imadejptr.github.io/strg/fnaf2/index.html", 'Google Docs', 'docs.ico');
+    }
 
-  function openMonkeyMart() {
-  var win = window.open();
-  var url = "https://imadejptr.github.io/strg/mkmart/index.html";
-  var iframe = win.document.createElement('iframe');
-  iframe.style.width = "100%";
-  iframe.style.height = "100%";
-  iframe.style.border = "none";
-  win.document.body.style.margin = '0';  
-  iframe.src = url;
-  win.document.body.appendChild(iframe);
-  win.document.title = 'Google Classroom';
-}
+    function openFnaf3() {
+      openWindow("https://imadejptr.github.io/strg/fnaf3/index.html", 'Google Docs', 'docs.ico');
+    }
+
+    function openFnaf4() {
+      openWindow("https://imadejptr.github.io/strg/fnaf4/index.html", 'Google Docs',  'docs.ico');
+    }
+
+    function openMonkeyMart() {
+      openWindow("https://imadejptr.github.io/strg/mkmart/index.html", 'Google Docs', 'docs.ico');
+    }
+
+    function openCookie() {
+      openWindow("https://imadejptr.github.io/strg/cookie/index.html", 'Google Docs', 'docs.ico');
+    }
+
+    function openRetroBowl() {
+      openWindow("https://imadejptr.github.io/strg/retro-bowl/index.html", 'Google Docs', 'docs.ico');
+    }
+
+    function openSuperHot() {
+      openWindow("https://imadejptr.github.io/strg/c3VwZXJob3Q=/index.html", 'Google Docs', 'docs.ico');    }
+
+      function openSubwaySurfers() {
+      openWindow("https://imadejptr.github.io/strg/subwaysurfers/index.html", 'Google Docs', 'docs.ico');    }
+  
+    function openSlope() {
+      openWindow("https://kdata1.com/2020/05/slope/", 'Google Docs', 'docs.ico'); }
+
+    function openMarioVer() {
+      openWindow("https://imadejptr.github.io/strg/nsmb-mariovsluigi/index.html", 'Google Docs', 'docs.ico');
+    }
+
+    function openBacon() {
+      openWindow("https://mathrules.dev/gamefiles/baconmaydie/", 'Google Docs', 'docs.ico');
+    }
+
+    function openRoblox() {
+      openWindow("https://mathrules.dev/service/hvtrs8%2F-nmw%2Cge%2Frlcy-rmbnoz-aoppmrctkol%2F7369-rmbnoz", 'Google Docs', 'docs.ico');
+    }
 </script>
 </body>
 </html>
